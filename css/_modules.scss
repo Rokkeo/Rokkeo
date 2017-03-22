@@ -401,7 +401,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	height: 100%;
 	position: relative;
 }
-#project-view-big {
+.project-view-big {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -409,29 +409,12 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 .project-view-bg {
 	width: 100%;
 	height: 100%;
-}
-.project-bg-overlay {
-	width: 50%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	&::after{
-		content: '';
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background: inherit;
-		-webkit-transform-origin: left bottom;
-		-ms-transform-origin: left bottom;
-		transform-origin: top right;
-		-webkit-transform: skewY(29deg);
-		-ms-transform: skewY(3deg);
-		transform: skewX(-17deg);
-		left: 0;
+	
+	@media screen and (orientation: portrait) {
+		width: auto;
 	}
 }
+
 .project-content {
 	width: 87%;
 	height: 57%;
@@ -448,12 +431,20 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	width: 43%;
 	margin: 0 auto;
 	opacity: 0.6 ;
+	
+	@media screen and (orientation: portrait) {
+		width: 91%;
+	}
 }
 
 .project-info {
 	position: absolute;
 	top: 2%;
 	width: 100%;
+	
+	@media screen and (orientation: portrait) {
+		top: 60%;
+	}
 }
 .project-category {
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
@@ -468,6 +459,10 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	top: -4vh;
 	right: 0;
 	
+	@media screen and (orientation: portrait) {
+		font-size: 5vh;
+	}
+	
 }
 
 .project-headline-primary {
@@ -478,6 +473,12 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 
 .high-tech {
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
+}
+
+@media screen and (orientation: portrait) {
+	.project-category, .high-tech {
+		display: none;
+	}
 }
 #cta-btn {
 	display: inline-block;
@@ -497,9 +498,17 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 		background-position:right bottom;
 	}
 
-	 @media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1000px) {
     	background-color: #101010;
     }
+	
+	@media screen and (orientation: portrait) {
+		float: none;
+		font-size: 2vh;
+		margin: 0;
+		display: block;
+		text-align: center;
+	}
 }
 .carret-right {
 	position: absolute;
@@ -529,6 +538,12 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
   	&:hover{
 		border: 10px solid rgba(0, 0, 0, 0.18);
 	}
+
+	@media screen and (orientation: landscape) and (max-width: 900px) {
+		width: 60px;
+		height: 60px;
+		border: 7px solid rgba(0, 0, 0, 0.14);
+	} 
 }
 i {
 	color: white;
@@ -560,15 +575,16 @@ i {
 }
 .hero-head {
 	position: absolute;
-	margin: 0 auto;
-	top: 20%;
-	left: -227px;
-	right: 0;
+    margin: 0 auto;
+    top: 20%;
+    left: -16vw;
+    right: 0;
+    width: 31vw;
 
 	@media screen and (orientation: portrait) {
 		top: 1%;
 		right: 0;
-		left: 27%;
+		left: 40%;
 		width: 77vw;
 	}
 }
@@ -583,6 +599,7 @@ i {
 
 	@media screen and (orientation: portrait) {
 		top: 12%;
+		width: 83%;
 	}
 
 	h3 {
@@ -600,29 +617,65 @@ i {
 	}
 
 	h1 {
-		font: 4vh/0.8 'Din', 'Roboto Slab', sans-serif;
-		text-transform: uppercase;
+		font: 36px/0.8 'Din', 'Roboto Slab', sans-serif;
+		// text-transform: uppercase;
 		margin-bottom: 30px;
 
 		span {
 			font-size: 14px;
+			
+			@media screen and (orientation: portrait) and (min-height: 730px) {
+				line-height: 1.7;
+				font-size: 2vh;
+
+			}
 		}
 	}
 }
 .about-me-info {
-    width: 41%;
+    width: 26%;
     position: relative;
     top: 30vh;
     left: 4vw;
 
 	@media screen and (orientation: portrait) {
 		width: auto;
+		top: 7vh;
+    	left: 0;
+	}
+
+	@media screen and (orientation: landscape) and (max-height: 500px) {
+		width: 43%;
+		top: 0;
+  
 	}
 
 	p {
 		font: 14px/1.7 'Din', 'Roboto Slab', sans-serif;
-		margin-left: 22%;
+		// margin-left: 22%;
+		height: 266px;
+   	 	overflow: scroll;
+		
+		@media screen and (orientation: portrait) {
+			margin-left: 0;
+			// line-height: 1.4;
+		}
+
+		@media screen and (orientation: portrait) and (max-height: 550px) {
+			line-height: 1.7;
+			font-size: 12px;
+		}
+		@media screen and (orientation: portrait) and (min-height: 730px) {
+			line-height: 1.7;
+			font-size: 2vh;
+			margin-top: 9vh;
+		}
+		@media screen and (orientation: landscape) and (max-height: 500px) {
+			font-size: 12px;
+		}
 	}
+
+	
 }
 
 /* CONTACT */
