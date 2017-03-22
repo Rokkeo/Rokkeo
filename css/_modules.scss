@@ -401,7 +401,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	height: 100%;
 	position: relative;
 }
-.project-view-big {
+#project-view-big {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -445,7 +445,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	// overflow: ;: hidden;
 }
 .project-content-bg {
-	// width: 54%;
+	width: 43%;
 	margin: 0 auto;
 	opacity: 0.6 ;
 }
@@ -469,11 +469,13 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	right: 0;
 	
 }
+
 .project-headline-primary {
 	font: 15vw 'FuturaICG', 'Roboto Slab', sans-serif;
 	text-transform: uppercase;
 	position: relative;
 }
+
 .high-tech {
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
 }
