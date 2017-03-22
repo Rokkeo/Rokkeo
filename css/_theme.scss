@@ -1,0 +1,84 @@
+// TRANSITIONS
+$time: 0.5s;
+
+// THEME COLORS
+$color1: white;
+$color2: #a80606;
+$color3: #620d0d;
+$color4: rgba(33, 6, 6, 0.4);
+$color5: black;
+$color6: #aa1717;
+$color7: #6a6a6a;
+
+// BACKGROUNDS
+.bg1 {
+    background: url(../img/bg1.jpg) no-repeat top center;
+    background-size: cover;
+}
+.bg2 {
+	 background: url(../img/contact-bg.jpg) no-repeat top center;
+    background-size: cover;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+	background-color: $color1/*#620d0d*/ /*#000*/;
+}
+// STYLES
+nav {
+	a {
+		color: $color1;
+		
+		&:hover {
+			background: rgba(6,6,6, 0.08);
+		}
+	}
+}.hamburger {
+
+	background-color: transparent;
+	
+	&:hover {
+		background: rgba(33, 6, 6, 0.4);
+	}
+}
+#header-small {
+  background: transparent;
+}
+.brand, .pt1, .pt2, .pt3, .pt4, .hero-hello, .hero-cta-info, .hero-mini-info {
+  color: $color1;
+}
+.bg-highlighter {
+  background: #aa1717;
+}
+.text-highlighter {
+    color: $color6;
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px black;
+}
+.logo-medium, .logo-small {
+	transition: $time;
+	&:hover {
+		background: $color4;
+	}
+	.cls-1 {
+		fill: $color1;
+	}
+}
+.loader-info {
+  color:#de4444;
+}
+#loader-wrapper {
+	background-color: #a80606;
+}
+.main-nav {
+//  background-color: $color6;
+	background-color: #aa1717;
+}
+
+.project-bg-overlay {
+  background: $color6;
+}
+.numeration {
+	color: #101010;
+}
+#cta-btn {
+	color: white;
+}

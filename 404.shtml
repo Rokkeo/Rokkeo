@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+	<title>Rokkeo</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Velimir Topolovacki">
+	<meta name="description" content="">
+	<!-- MOBILE SPECIFIC META -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- FONT-AWESOME -->
+	<script src="https://use.fontawesome.com/3e3ed68e17.js"></script>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+  </head>
+
+	<div id="wrapper">
+	
+			<!-- HERO-LOADER-->
+
+		<div id="loader-wrapper">
+			<!-- <div id="hero-loader"></div> -->
+			<div class="chat-bubble">
+				<p>Work in <br>Progress...</p>
+			</div>
+			<img class="loader-img" src="img/loader.png" alt="">
+			<!-- <p class="loader-info">Work in progress...</p> -->
+		</div>
+
+
+
+	</div> <!-- /#wrapper -->
+
+
+		<!-- JAVASCRIPTS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+
+	</body>
+
+</html>

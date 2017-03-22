@@ -1,0 +1,88 @@
+// GLOBAL ELEMENTS POSITIONING
+html, body, #wrapper, #loader-wrapper, .main-nav {
+	width: 100%;
+	height:100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;	
+}
+
+// HEADER
+#header-small {
+	width: 100%;
+	position: absolute;
+	z-index: 999;
+}
+
+// MAIN NAVIGATION
+.main-nav {
+	display: none;
+	background: black;
+	position: absolute;
+	z-index: 99;
+	opacity: 0.97;
+
+	nav {
+		position: absolute;
+		top: 34%;
+		left: 0;
+		right: 0;
+
+		li {
+			width: 100%;
+		}
+
+		a {
+			font: bold 72px 'Coradium', 'Roboto Slab', sans-serif;
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding-left: 95px;
+			position: relative;			
+			transition: background 0.5s;
+
+			@media screen and (max-width: 1900px) {
+				font-size: 5vw;
+			}
+
+			@media screen and (orientation: portrait) {
+				font-size: 6vh;
+
+			}
+
+			&:hover {
+				// background: url(../img/contact-bg.jpg) no-repeat;
+				// padding-left: 100px;
+			}
+		}
+	}
+}
+
+// FOOTER
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+// BOX AND TEXT ALIGNMENTS
+.box-align-left {
+	float: left;
+}
+.box-align-right {
+	float: right;
+}
+.clearfix {
+	content: '';
+	display: table;
+	clear:both;
+}
+.text-align-center {
+	text-align: center;
+}
+.text-align-left {
+	text-align: left;
+}
+.text-align-right {
+	text-align: right;
+}

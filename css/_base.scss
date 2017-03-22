@@ -1,0 +1,193 @@
+// GENERAL
+// * {box-sizing: border-box;}
+body {
+	font-family: 'Roboto Slab', 'Arial', sans-serif; 
+	line-height: 1.4; 
+	background-color: black;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+// LIST
+ol, ul {
+	list-style: none;
+}
+
+// BLOCKQUOTE
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+// TABLE
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// BUTTON
+button {
+	border: none;
+	background-color: none;
+	padding: 0;
+}
+button:focus {
+	outline: none;
+}
+
+// IMG
+img {display: block;}
+
+// FONTS
+@font-face {
+	font-family: 'Roboto Slab';
+	src: url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src:url('../fonts/RobotoCondensed/RobotoCondensed.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RobotoCondensed/RobotoCondensed.woff') format('woff'),
+		url('../fonts/RobotoCondensed/RobotoCondensed.ttf')  format('truetype'),
+		url('../fonts/RobotoCondensed/RobotoCondensed.svg#RobotoCondensed') format('svg');
+}
+
+@font-face {
+	font-family: 'Nixie One';
+	src:url('../fonts/NixieOne/NixieOne.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NixieOne/NixieOne.woff') format('woff'),
+		url('../fonts/NixieOne/NixieOne.ttf')  format('truetype'),
+		url('../fonts/NixieOne/NixieOne.otf')  format('opentype'),
+		url('../fonts/NixieOne/NixieOne.svg#NixieOne') format('svg');
+}
+
+@font-face {
+	font-family: 'Noticia Text';
+	src:url('../fonts/NoticiaText/NoticiaText.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NoticiaText/NoticiaText.woff') format('woff'),
+		url('../fonts/NoticiaText/NoticiaText.ttf')  format('truetype'),
+		url('../fonts/NoticiaText/NoticiaText.svg#NoticiaText') format('svg');
+}
+
+@font-face {
+	font-family: 'Futura Orto';
+	src:url('../fonts/FuturaOrto/FuturaOrto.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaOrto/FuturaOrto.woff') format('woff'),
+		url('../fonts/FuturaOrto/FuturaOrto.ttf')  format('truetype'),
+		url('../fonts/FuturaOrto/FuturaOrto.svg#FuturaOrto') format('svg');
+}
+
+@font-face {
+	font-family: 'Elega';
+	src:url('../fonts/Elega/Elega.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Elega/Elega.woff') format('woff'),
+		url('../fonts/Elega/Elega.ttf')  format('truetype'),
+		url('../fonts/Elega/Elega.otf')  format('opentype'),
+		url('../fonts/Elega/Elega.svg#Elega') format('svg');
+}
+
+@font-face {
+  	font-family: 'Din';
+  	src:url('../fonts/DinLT/DinLT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DinLT/DinLT.woff') format('woff'),
+		url('../fonts/DinLT/DinLT.ttf')  format('truetype'),
+		url('../fonts/DinLT/DinLT.svg#DinLT') format('svg');
+}
+
+@font-face {
+	font-family: 'Coradium';
+	src:url('../fonts/Coradium/Coradium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Coradium/Coradium.woff') format('woff'),
+		url('../fonts/Coradium/Coradium.ttf')  format('truetype'),
+		url('../fonts/Coradium/Coradium.svg#Coradium') format('svg');
+}
+
+@font-face {
+	font-family: 'FuturaICG';
+	src:url('../fonts/FuturaICG/FuturaICG.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaICG/FuturaICG.woff') format('woff'),
+		url('../fonts/FuturaICG/FuturaICG.ttf')  format('truetype'),
+		url('../fonts/FuturaICG/FuturaICG.svg#FuturaICG') format('svg');
+}
+
+// HEADINGS
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 3.157em;
+}
+h2 {
+	font-size: 2.369em;
+}
+h3 {
+	font-size: 1.777em;
+}
+h4 {
+	font-size: 1.333em;
+}
+small, .font_small {
+	font-size: 0.75em;
+}
+
+// LINKS
+a {
+	text-decoration: none;
+	color: black;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// FORMS
+:focus {
+	outline: none;
+}
+
+// BUTTONS
+button {
+	cursor: pointer;
+}
+
+// PSEUDO
+::selection {
+	background: #e3e3e3;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
