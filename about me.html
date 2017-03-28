@@ -17,70 +17,74 @@
 
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/animate.css">
-
+		<link rel="stylesheet" href="css/animate.basic.css">
 
 	</head>
 
 	<body>
 
 		<!-- HERO-LOADER-->
-<!--
 		<div id="loader-wrapper">
 			<div id="hero-loader"></div>
-			<img class="loader-img" src="img/loader.png" alt="">
+			<img class="loader-img" src="img/loader.png" alt="loader-image">
 			<p class="loader-info">Loading...</p>
 		</div>
 
--->
 		<div id="wrapper">
 
 			<!-- HEADER -->
 			<header id="header-small">
+
 				<!-- LOGO -->
 				<a href="index.html" class="logo-small box-align-left">
 					<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392 398"><defs></defs><title>rokkeo logo</title><path class="cls-1" d="M445,160l98,100H693s45,4,45,51-44,49-44,49H640l92,90s105-29,105-145S747,160,693,160" transform="translate(-445 -160)"/><polygon class="cls-1" points="0 196 135 196 338 398 196 398 0 196"/></svg>
 				</a>
+
 				<!-- MENU-BUTTON -->
 				<button class="hamburger hamburger-small hamburger--emphatic hamburger--emphatic-small box-align-right" type="button">
 					<span class="hamburger-box hamburger-box-small">
 					<span class="hamburger-inner hamburger-inner-small"></span>
 					</span>
 				</button>
+
+				<!-- MENU -->
+				<div class="main-nav">
+					<nav>
+						<ul>
+							<li><a href="work.html">Work</a></li>
+							<li><a href="about%20me.html">About Me</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+
 			</header>
 
-			<!-- MENU -->
-			<div class="main-nav">
-				<nav>
-					<ul>
-						<li><a href="work.html">Work</a></li>
-						<li><a href="about%20me.html">About Me</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
+			<!-- MAIN-CONTENT -->
+			<main role="main">
 
-			<!-- ABOUT-ME-BG -->
-			<div class="about-me-bg">
-				<img class="project-view-bg" src="img/about-me-bg.jpg" alt="">
-				<!-- PROJECT-BG-OVERLAY -->
-				<div class="bg-overlay animated slideInRight"></div>
-			</div>
-
-			<!-- HERO-HEAD -->
-			<img class="hero-head animated flip" src="img/meet-the-hero-bg.png" alt="">
-
-			<!-- ABOUT-ME-CONTENT -->
-			<div class="about-me-content">
-
-				<h3 class="animated fadeInLeft project-headline-primary text-align-left"><span>Meet <br>the <br></span>hero</h3>
-				<div class="about-me-info box-align-left">
-					<h1>Hello World!</h1>
-					<p>My name is Velja, and I'm a web developer from Belgrade, Serbia. Big fan of Kimi Raikonnen and his
-					famous quote <cite>"Leave me alone, I know what I'm doing"</cite>. Interested in physics. Addicted to football tactics. In love with coding. Have something interesting for me? No? Not a problem. Meet me for a cup of coffe then. 
-					It's on me. : )</p>
+				<!-- ABOUT-ME-BG -->
+				<div class="about-me-bg">
+					<img class="project-view-bg" src="img/about-me-bg.jpg" alt="about-me-background">
+					<!-- PROJECT-BG-OVERLAY -->
+					<div class="bg-overlay vertical animated slideInRight"></div>
 				</div>
-			</div>
+
+				<!-- HERO-HEAD -->
+				<img class="hero-head animated flip" src="img/meet-the-hero-bg.png" alt="clark-kent-image">
+
+				<!-- ABOUT-ME-CONTENT -->
+				<div class="about-me-content">
+					<h3 class="animated fadeInLeft project-headline-primary text-align-left"><span>Meet <br>the <br></span>hero</h3>
+					<div class="about-me-info box-align-left">
+						<h1>Hello World!</h1>
+						<p>My name is Velja, and I'm a web developer from Belgrade, Serbia. Big fan of Kimi Raikonnen and his
+						famous quote <cite>"Leave me alone, I know what I'm doing"</cite>. Interested in physics. Addicted to football tactics. In love with coding. Have something interesting for me? No? Not a problem. Meet me for a cup of coffee then. 
+						It's on me. : )</p>
+					</div>
+				</div>
+
+			</main>
 
 			<!-- FULL-SCREEN-ICON-->
 			<div class="icon">
@@ -101,17 +105,16 @@
 		</div> <!-- /#wrapper -->
 
 		<!-- NOISE-EFFECT -->
-<!--		<div class="box noise vignette"></div> -->
+		<!-- <div class="box noise vignette"></div> -->
 
 		<!-- AUDIO-PLAYER -->
-		<audio id="audioplayer" autoplay controls autobuffer>
+		<!-- <audio id="audioplayer" autoplay controls autobuffer>
 			<source src="audio/04. Secret Weapon.mp3" type="audio/mp3">
-		</audio>
+		</audio> -->
 
 		<!-- JAVASCRIPTS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="js/scripts.js"></script>
-
+		<script src="js/min/scripts.min.js"></script>
 
 	</body>
 

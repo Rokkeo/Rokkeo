@@ -103,7 +103,7 @@
 	width: 57.9%;
 	margin: auto;
 	position: relative;
-	top: 9%;
+	top: 5vh;
 
 	@media screen and (orientation:portrait) {
 	 	width: 100vh;
@@ -112,6 +112,9 @@
 	// @media screen and (min-width: 460px) and (max-width: 800px){
 	// 	width: 67%;
 	// }
+	@media screen and (min-width: 600px) and (max-width: 800px){
+		width: 65%;
+	}
 	@media screen and (min-width: 800px) and (max-width: 1280px){
 		width: 80vh;
 	}
@@ -122,9 +125,9 @@
 		width: 104%;
 	}
 	@media screen and (min-width: 1366px) and (max-width: 1500px){
-		width: 60%;
+		width: 70%;
 	}
-	@media screen and (min-width: 1500px) and (max-width: 1920px){
+	@media screen and (min-width: 1500px) and (max-width: 1900px){
 		width: 50%;
 	}
 }
@@ -414,7 +417,6 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 		width: auto;
 	}
 }
-
 .project-content {
 	width: 87%;
 	height: 57%;
@@ -425,7 +427,6 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	// overflow: ;: hidden;
 }
 .project-content-bg {
 	width: 43%;
@@ -449,9 +450,6 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 .project-category {
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
 	text-transform: uppercase;
-	// position: relative;
-	// top: 84px;
-	// left: 1%;
 }
 .numeration {
 	font: bold 6vw 'FuturaICG', 'Roboto Slab', sans-serif;
@@ -462,19 +460,16 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	@media screen and (orientation: portrait) {
 		font-size: 5vh;
 	}
-	
 }
-
 .project-headline-primary {
 	font: 15vw 'FuturaICG', 'Roboto Slab', sans-serif;
 	text-transform: uppercase;
 	position: relative;
+	// text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62)
 }
-
 .high-tech {
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
 }
-
 @media screen and (orientation: portrait) {
 	.project-category, .high-tech {
 		display: none;
@@ -520,35 +515,40 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
     }
 }
 .view-all {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: border-box;
-	width: 90px;
-	height: 90px;
-	background: #bc1c1c;
-	margin: 0 auto;
-	border: 10px solid rgba(0, 0, 0, 0.14);
-	border-radius: 100%;
-	position: absolute;
-	right: 0;
-	bottom: 1%;
-	left: 0;
-	transition: 0.5s;
+    /* -webkit-box-sizing: content-box; */
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    margin: 0 auto;
+    /* border: 10px solid #a91616; */
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.11);
 
   	&:hover{
-		border: 10px solid rgba(0, 0, 0, 0.18);
+		// border: 10px solid rgba(0, 0, 0, 0.18); 
+    	box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.18);
+		
 	}
 
 	@media screen and (orientation: landscape) and (max-width: 900px) {
 		width: 60px;
 		height: 60px;
-		border: 7px solid rgba(0, 0, 0, 0.14);
+		// border: 7px solid rgba(0, 0, 0, 0.12);
 	} 
 }
 i {
 	color: white;
 }
-/* carousel-control */
+
+/* CAROUSEL-CONTROL */
 #carousel-control {
 	width: 95%;
     height: 6%;
@@ -627,7 +627,6 @@ i {
 			@media screen and (orientation: portrait) and (min-height: 730px) {
 				line-height: 1.7;
 				font-size: 2vh;
-
 			}
 		}
 	}
@@ -652,13 +651,9 @@ i {
 
 	p {
 		font: 14px/1.7 'Din', 'Roboto Slab', sans-serif;
-		// margin-left: 22%;
-		height: 266px;
-   	 	overflow: scroll;
 		
 		@media screen and (orientation: portrait) {
 			margin-left: 0;
-			// line-height: 1.4;
 		}
 
 		@media screen and (orientation: portrait) and (max-height: 550px) {
@@ -679,7 +674,7 @@ i {
 }
 
 /* CONTACT */
-.contact-headline-primary,.contact-hello {
+.contact-headline-primary, #contact-hello {
 	font: bold 20vw 'FuturaICG', 'Roboto Slab', sans-serif;
 	color: rgba(143, 42, 42, 0.14);
 	text-transform: uppercase;
@@ -689,14 +684,26 @@ i {
 	    top: 18vh;
 	}
 }
-.contact-hello {
+
+form {
+	width: 100%;
+	margin: 0 auto;
+	background: black;
+	position: relative;
+	bottom: 17%;
+
+	@media screen and (orientation: portrait) {
+		top: 14vh;
+	}
+}
+#contact-hello {
 	font-size: 8vw;
 	color: #8f2a2a;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	top: -10vh;
+	top: -12vh;
 	z-index: 85;
 
 	@media screen and (orientation: portrait) {
@@ -705,22 +712,9 @@ i {
 }
 .contact-container {
 	width:  50%;
-	background: black;
-	min-height: 260px;
 	position: relative;
 	margin: 0 auto;
-}
-form {
-	width: 100%;
-	margin: 0 auto;
-	background: black;
-	position: relative;
-	bottom: 11%;
-	padding-top: 5%;
-
-	@media screen and (orientation: portrait) {
-		top: 14vh;
-	}
+	padding: 5% 0 2% 0;
 }
 input {
 	width: 47%;
@@ -732,8 +726,8 @@ input {
 	margin-bottom: 23px;
 	margin-right: 23px;
 	background: transparent;
-	border-bottom: 1px solid #131313;
-	color: gray;
+	border-bottom: 1px solid rgba(143, 42, 42, 0.35);
+	color: #8f2a2a;
 	font-family: 'Din', 'Roboto Slab', sans-serif;
 	font-style: italic;
 	font-weight: bold;
@@ -745,14 +739,14 @@ input {
 }
 *::placeholder {
 	padding-left: 2%;
-	color: #131313;
+	color: #8f2a2a;
 	text-transform: uppercase;
 	font-style: normal;
 }
 input[placeholder="message"] {
-	width: 98%;
+	// width: 96.4%;
 }
-input[type="submit"] {
+#send-btn {
 	width: 100%;
 	background: rgba(143, 42, 42, 0.14);
 	border: none;
@@ -768,6 +762,76 @@ input[value="send"] {
 	font: bold 24px 'FuturaICG', 'Roboto Slab', sans-serif;
 	color: #8f2a2a;
 	text-transform: uppercase;
-	padding: 30px 0;
+	padding: 3vh 0;
+}
+#echo {
+	font: 3vh 'Din', 'Roboto Slab', sans-serif;
+	padding: 12vh 0;
+	width: 60%;
+	margin: 0 auto;
 }
 
+
+/* COMING SOON */
+.cs-container {
+	width: 283px;
+	height: 283px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.cs-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 9vw;
+}
+.cs-info {
+	color: white;
+	font: 25px 'FuturaICG', 'Roboto Slab', open-sans;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	bottom: -137%;
+}
+
+.chat-bubble {
+    width: 290px;
+    height: 183px;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+    /* margin-right: 298px; */
+    position: absolute;
+    right: 0;
+    top: -20vh;
+    left: 11vw;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 125;
+
+    p {
+        color: #a80606;
+        position: relative;
+        top: 82px;
+        font: bold 29px 'Din';
+        text-transform: uppercase;
+    }
+
+    &::after {
+		content: '';
+		width: 82%;
+		height: 75%;
+		background: url(../img/bubble.png) no-repeat;
+		position: relative;
+		bottom: -72%;
+		left: 20%;
+		display: block;
+    }
+}

@@ -7,51 +7,54 @@ $color2: #a80606;
 $color3: #620d0d;
 $color4: rgba(33, 6, 6, 0.4);
 $color5: black;
-$color6: #aa1717;
+$color6: #aa1717; 
 $color7: #6a6a6a;
+$color8: #8f2a2a;
 
-// BACKGROUNDS
+
 .bg1 {
     background: url(../img/bg1.jpg) no-repeat top center;
     background-size: cover;
 }
 .bg2 {
-	 background: url(../img/contact-bg.jpg) no-repeat top center;
+	background: url(../img/contact-bg.jpg) no-repeat top center;
     background-size: cover;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-	background-color: $color1/*#620d0d*/ /*#000*/;
+	background-color: $color1;
 }
-// STYLES
 nav {
 	a {
-		color: $color1;
-		
+
 		&:hover {
 			background: rgba(6,6,6, 0.08);
 		}
-	}
-}.hamburger {
 
-	background-color: transparent;
-	
+	}
+}
+.hamburger {
+
 	&:hover {
 		background: rgba(33, 6, 6, 0.4);
+		
+		@media screen and (max-width: 900px) {
+			background: transparent;
+		}
 	}
 }
-#header-small {
-  background: transparent;
+#header-small, .hamburger {
+  background-color: transparent;
 }
-.brand, .pt1, .pt2, .pt3, .pt4, .hero-hello, .hero-cta-info, .hero-mini-info {
+.brand, .pt1, .pt2, .pt3, .pt4, .hero-hello, .hero-cta-info, .hero-mini-info, nav a {
   color: $color1;
 }
-.bg-highlighter {
-  background: #aa1717;
+#loader-wrapper, .main-nav, .bg-overlay, .bg-highlighter, .bg3 {
+  background: $color6;
 }
 .text-highlighter {
-    color: $color6;
+	color: $color6;
     font-weight: bold; 
-    text-shadow: 1px 1px 2px black;
+    text-shadow: -1px -1px 9px #000000;
 }
 .logo-medium, .logo-small {
 	transition: $time;
@@ -65,20 +68,12 @@ nav {
 .loader-info {
   color:#de4444;
 }
-#loader-wrapper {
-	background-color: #a80606;
-}
-.main-nav {
-//  background-color: $color6;
-	background-color: #aa1717;
-}
-
-.bg-overlay {
-  background: $color6;
-}
 .numeration {
 	color: #101010;
 }
 #cta-btn {
-	color: white;
+	color: $color1;
+}
+#echo {
+	color: $color8;
 }

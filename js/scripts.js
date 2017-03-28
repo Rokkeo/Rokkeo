@@ -1,3 +1,4 @@
+
 // MAIN MENU BUTTON
   // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
@@ -251,10 +252,6 @@ $('.prev').click(function() {
   cycleItems();
 });
 
-
-
-
-
 // TURNS-OFF NOISE VIGNETTE EFX
 //window.onload = function deactivateBg() {
 //	var bg = document.querySelectorAll('.box.noise.vignette');
@@ -262,3 +259,7 @@ $('.prev').click(function() {
 //		bg[i].style.display = "none";
 //	}
 //}
+
+
+
+
