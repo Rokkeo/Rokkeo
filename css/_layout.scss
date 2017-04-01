@@ -4,11 +4,12 @@ html, body, #wrapper, #loader-wrapper, .main-nav, main {
 	height:100%;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;	
+	overflow: hidden;
 }
 #loader-wrapper {
 	z-index: 9999;
 }
+
 // HEADER
 #header-small {
 	width: 100%;
@@ -39,7 +40,7 @@ html, body, #wrapper, #loader-wrapper, .main-nav, main {
 			width: 100%;
 			height: 100%;
 			padding-left: 95px;
-			position: relative;			
+			position: relative;
 			transition: background 0.5s;
 
 			@media screen and (max-width: 1900px) {
@@ -59,7 +60,7 @@ html, body, #wrapper, #loader-wrapper, .main-nav, main {
 	}
 }
 
-// BG-OVERLAY 
+// BG-OVERLAY
 .bg-overlay {
 	width: 50%;
 	height: 100%;
@@ -80,7 +81,7 @@ html, body, #wrapper, #loader-wrapper, .main-nav, main {
 		-ms-transform: skewY(3deg);
 		transform: skewX(-17deg);
 		left: 0;
-		
+
 		@media screen and (orientation: portrait) {
 			transform: skewX(-15deg);
 		}
@@ -90,7 +91,7 @@ html, body, #wrapper, #loader-wrapper, .main-nav, main {
 .vertical {
 	@media screen and (orientation: portrait) {
 		width: 100%;
-		top: 25%;	
+		top: 25%;
 	}
 }
 
