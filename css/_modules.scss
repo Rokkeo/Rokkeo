@@ -32,7 +32,7 @@
     text-align: center;
     font: bold 16px 'Din', 'Roboto Slab', sans-serif;
     text-transform: uppercase;
-    
+
     @media screen and (max-height: 400px) {
     	top: 94vh;
     }
@@ -104,7 +104,7 @@
 	position: relative;
 	z-index: 9999;
 	cursor: pointer;
-	transition: .5s;	
+	transition: .5s;
 }
 .hamburger-small {
 	padding: 12px;
@@ -112,7 +112,7 @@
 .hamburger-box {
 	display: inline-block;
 	width: 36px;
-	height: 36px;	
+	height: 36px;
 }
 .hamburger-box-small {
 	width: 28px;
@@ -121,7 +121,7 @@
 .hamburger-inner {
 	display: block;
 	margin-top: -2px;
-	top: 50%;	
+	top: 50%;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
 	width: 36px;
@@ -169,7 +169,7 @@
 }
 .hamburger--emphatic.is-active .hamburger-inner::before {
 	top: -80px;
-	left: -80px;	
+	left: -80px;
 	transform: translate3d(80px, 80px, 0) rotate(45deg);
 	transition: left 0.2s ease-out, top 0.05s 0.2s linear, transform 0.2s 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -186,8 +186,8 @@
 	margin: auto;
 	position: relative;
 	top: 5vh;
-	
-	
+
+
 	@media screen and (orientation:portrait) {
 	 	width: 100vh;
 		top: 0;
@@ -195,7 +195,7 @@
 	@media screen and (orientation:portrait) and (min-height: 400px) {
 	 	width: 100vh;
 		top: -5vh;
-	}	
+	}
 	@media screen and (min-width: 1024px) and (max-width: 1366px){
 		width: 70%;
 	}
@@ -219,7 +219,7 @@
 .hero {
 	max-width: 100%;
 	height: auto;
-	
+
 	@media screen and (orientation: portrait) and (min-height: 1500px){
 		width: 70vw;
 	}
@@ -263,7 +263,7 @@
 	text-transform: uppercase;
 	position: absolute;
 	top: 0;
-	right: 3vw;	
+	right: 3vw;
 }
 @media screen and (orientation: portrait) {
 	.pt1 {
@@ -284,7 +284,7 @@
 	font: italic 3vw/1.2 'Elega', 'Roboto Slab', sans-serif;
 	text-transform: uppercase;
 	margin-top: -1%;
-	
+
 	@media screen and (orientation: portrait) {
 		font-size: 7vw;
 	}
@@ -510,7 +510,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 .project-view-bg {
 	width: 100%;
 	// height: 100%;
-	
+
 	@media screen and (orientation: portrait) {
 		width: auto;
 	}
@@ -530,7 +530,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	width: 43%;
 	margin: 0 auto;
 	opacity: 0.6 ;
-	
+
 	@media screen and (orientation: portrait) {
 		width: 91%;
 	}
@@ -540,7 +540,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	position: absolute;
 	top: 2%;
 	width: 100%;
-	
+
 	@media screen and (orientation: portrait) {
 		top: 60%;
 	}
@@ -554,7 +554,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	position: absolute;
 	top: -4vh;
 	right: 0;
-	
+
 	@media screen and (orientation: portrait) {
 		font-size: 5vh;
 	}
@@ -594,7 +594,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	@media screen and (max-width: 1000px) {
     	background-color: #101010;
     }
-	
+
 	@media screen and (orientation: portrait) {
 		float: none;
 		font-size: 2vh;
@@ -613,7 +613,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	position: absolute;
     right: -31px;
     top: 2vh;
-    
+
     @media screen and (max-width: 1000px) {
     	display: none;
     }
@@ -642,16 +642,16 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 
   	&:hover{
     	box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.18);
-		
+
 	}
 
 	@media screen and (orientation: landscape) and (max-width: 900px) {
 		width: 60px;
 		height: 60px;
-	} 
+	}
 	@media screen and (orientation: landscape) and (max-height: 400px) {
 		display: none;
-	} 
+	}
 }
 i {
 	color: white;
@@ -731,7 +731,7 @@ i {
 
 		span {
 			font-size: 14px;
-			
+
 			@media screen and (orientation: portrait) and (min-height: 730px) {
 				line-height: 1.7;
 				font-size: 2vh;
@@ -754,12 +754,12 @@ i {
 	@media screen and (orientation: landscape) and (max-height: 500px) {
 		width: 43%;
 		top: 5vh;
-  
+
 	}
 
 	p {
 		font: 14px/1.7 'Din', 'Roboto Slab', sans-serif;
-		
+
 		@media screen and (orientation: portrait) {
 			margin-left: 0;
 		}
@@ -778,7 +778,7 @@ i {
 		}
 	}
 
-	
+
 }
 
 /* CONTACT */
@@ -839,7 +839,7 @@ input {
 	font-family: 'Din', 'Roboto Slab', sans-serif;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 2vh;
+	font-size: 16px;
 
 	@media screen and (orientation: portrait) {
 		width: 100%;

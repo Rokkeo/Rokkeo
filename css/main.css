@@ -347,7 +347,7 @@ form { width: 100%; margin: 0 auto; background: black; position: relative; botto
 
 .contact-container { width: 50%; position: relative; margin: 0 auto; padding: 5% 0 2% 0; }
 
-input { width: 47%; float: left; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: none; padding: 23px 0; margin-bottom: 23px; margin-right: 23px; background: transparent; border-bottom: 1px solid rgba(143, 42, 42, 0.35); color: #8f2a2a; font-family: 'Din', 'Roboto Slab', sans-serif; font-style: italic; font-weight: bold; font-size: 2vh; }
+input { width: 47%; float: left; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: none; padding: 23px 0; margin-bottom: 23px; margin-right: 23px; background: transparent; border-bottom: 1px solid rgba(143, 42, 42, 0.35); color: #8f2a2a; font-family: 'Din', 'Roboto Slab', sans-serif; font-style: italic; font-weight: bold; font-size: 16px; }
 @media screen and (orientation: portrait) { input { width: 100%; } }
 
 *::-webkit-input-placeholder { padding-left: 2%; color: #8f2a2a; text-transform: uppercase; font-style: normal; }
