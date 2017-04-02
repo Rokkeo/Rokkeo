@@ -164,18 +164,20 @@ footer { width: 100%; position: absolute; bottom: 0; }
 .hero-container { width: 57.9%; margin: auto; position: relative; top: 5vh; }
 @media screen and (orientation: portrait) { .hero-container { width: 100vh; top: 0; } }
 @media screen and (orientation: portrait) and (min-height: 400px) { .hero-container { width: 100vh; top: -5vh; } }
-@media screen and (min-width: 1024px) and (max-width: 1366px) { .hero-container { width: 70%; } }
-@media screen and (width: 1024px) and (height: 1366px) { .hero-container { width: 104%; } }
-@media screen and (min-width: 1366px) and (max-width: 1500px) { .hero-container { width: 70%; } }
-@media screen and (min-width: 1500px) and (max-width: 1900px) { .hero-container { width: 50%; } }
-@media screen and (min-width: 2000px) and (max-width: 3000px) { .hero-container { width: 70%; } }
 @media screen and (orientation: portrait) and (width: 1600px) and (height: 2560px) { .hero-container { width: 100vh; top: 5vh; } }
+@media screen and (orientation: portrait) and (min-height: 1000px) { .hero-container { width: auto; } }
+@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1366px) { .hero-container { width: 70%; } }
+@media screen and (orientation: landscape) and (width: 1024px) and (height: 1366px) { .hero-container { width: 104%; } }
+@media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1500px) { .hero-container { width: 70%; } }
+@media screen and (orientation: landscape) and (min-width: 1500px) and (max-width: 1900px) { .hero-container { width: 50%; } }
+@media screen and (orientation: landscape) and (min-width: 2000px) and (max-width: 3000px) { .hero-container { width: 70%; } }
 
 .hero { max-width: 100%; height: auto; }
 @media screen and (orientation: portrait) and (min-height: 1500px) { .hero { width: 70vw; } }
 @media screen and (orientation: landscape) and (max-height: 480px) { .hero { width: 57vw; } }
 @media screen and (orientation: landscape) and (min-height: 1500px) { .hero { width: 70vw; } }
-@media screen and (orientation: portrait) and (width: 1600px) and (height: 2560px) { .hero { width: 100vh; top: 5vh; } }
+@media screen and (orientation: portrait) and (min-height: 1000px) { .hero { width: 100vh; top: 5vh; } }
+@media screen and (orientation: portrait) and (min-height: 1000px) { .hero { max-width: none; width: 100vh; top: 5vh; } }
 
 /* HERO-HELLO */
 .hero-hello { width: 81%; margin: auto; position: absolute; top: 40%; right: 0; left: 0; }

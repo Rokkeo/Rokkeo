@@ -196,25 +196,29 @@
 	 	width: 100vh;
 		top: -5vh;
 	}
-	@media screen and (min-width: 1024px) and (max-width: 1366px){
+	@media screen and (orientation:portrait) and (width: 1600px) and (height: 2560px){
+	width: 100vh;
+	top: 5vh;
+	}
+	@media screen and (orientation:portrait) and (min-height: 1000px){
+	width:auto;
+	}
+	@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1366px){
 		width: 70%;
 	}
-	@media screen and (width: 1024px) and (height: 1366px){
+	@media screen and (orientation: landscape) and (width: 1024px) and (height: 1366px){
 		width: 104%;
 	}
-	@media screen and (min-width: 1366px) and (max-width: 1500px){
+	@media screen and (orientation: landscape) and (min-width: 1366px) and (max-width: 1500px){
 		width: 70%;
 	}
-	@media screen and (min-width: 1500px) and (max-width: 1900px){
+	@media screen and (orientation: landscape) and (min-width: 1500px) and (max-width: 1900px){
 		width: 50%;
 	}
-	@media screen and (min-width: 2000px) and (max-width: 3000px){
+	@media screen and (orientation: landscape) and (min-width: 2000px) and (max-width: 3000px){
 		width: 70%;
 	}
-	@media screen and (orientation:portrait) and (width: 1600px) and (height: 2560px){
-	 	width: 100vh;
-		top: 5vh;
-	}
+
 }
 .hero {
 	max-width: 100%;
@@ -229,7 +233,12 @@
 	@media screen and (orientation: landscape) and (min-height: 1500px){
 	width: 70vw;
 	}
-	@media screen and (orientation:portrait) and (width: 1600px) and (height: 2560px){
+	@media screen and (orientation:portrait) and (min-height: 1000px){
+	 	width: 100vh;
+		top: 5vh;
+	}
+	@media screen and (orientation:portrait) and (min-height: 1000px){
+		max-width: none;
 	 	width: 100vh;
 		top: 5vh;
 	}
