@@ -262,4 +262,21 @@ $('.prev').click(function() {
 
 
 
+// SWITCH-VIEW-BUTTON
+$(".view-all").click(function(){
+      $('#project-list').animate({
+          'opacity' : 'toggle',
+      });
+});
 
+$(".view-all").click(function(){
+      $(".fa-list").toggleClass("fa-desktop");
+});
+
+$(".hamburger").click(function(){
+      $(".view-all").toggleClass("hide");
+});
+
+$(".view-all").click(function(){
+      $(".hamburger").toggleClass("hide");
+});

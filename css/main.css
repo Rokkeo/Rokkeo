@@ -67,13 +67,13 @@ html { overflow: scroll; overflow-x: hidden; }
 
 ::-webkit-scrollbar-thumb { background: #FF0000; }
 
-html, body, #wrapper, #loader-wrapper, .main-nav, main { width: 100%; height: 100%; margin: 0 auto; position: relative; overflow: hidden; }
+html, body, #wrapper, #loader-wrapper, .main-nav, main, #project-list { width: 100%; height: 100%; margin: 0 auto; position: relative; overflow: hidden; }
 
 #loader-wrapper { z-index: 9999; }
 
 #header-small { width: 100%; height: 100%; position: absolute; }
 
-.main-nav { display: none; position: absolute; z-index: 99; opacity: 0.97; }
+.main-nav { display: none; position: absolute; z-index: 999; opacity: 0.97; }
 .main-nav nav { position: absolute; top: 34%; left: 0; right: 0; }
 .main-nav nav li { width: 100%; }
 .main-nav nav a { font: bold 72px 'Coradium', 'Roboto Slab', sans-serif; display: block; width: 100%; height: 100%; padding-left: 95px; position: relative; -webkit-transition: background 0.5s; transition: background 0.5s; }
@@ -121,9 +121,9 @@ footer { width: 100%; position: absolute; bottom: 0; }
 @keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 /* LOGO */
-.logo-medium { width: 48px; height: 48px; padding: 28px; }
+.logo-medium { width: 48px; padding: 28px; }
 
-.logo-small { width: 28px; height: 28px; padding: 10px; position: relative; z-index: 99; }
+.logo-small { width: 28px; padding: 10px; position: relative; z-index: 32; }
 
 /* MENU-BUTTON */
 .hamburger { display: inline-block; padding: 32px; margin: 0; border: 0; position: relative; z-index: 9999; cursor: pointer; -webkit-transition: .5s; transition: .5s; }
@@ -174,10 +174,11 @@ footer { width: 100%; position: absolute; bottom: 0; }
 
 .hero { max-width: 100%; height: auto; }
 @media screen and (orientation: portrait) and (min-height: 1500px) { .hero { width: 70vw; } }
-@media screen and (orientation: landscape) and (max-height: 480px) { .hero { width: 57vw; } }
-@media screen and (orientation: landscape) and (min-height: 1500px) { .hero { width: 70vw; } }
 @media screen and (orientation: portrait) and (min-height: 1000px) { .hero { width: 100vh; top: 5vh; } }
 @media screen and (orientation: portrait) and (min-height: 1000px) { .hero { max-width: none; width: 100vh; top: 5vh; } }
+@media screen and (orientation: landscape) and (max-height: 480px) { .hero { width: 57vw; } }
+@media screen and (orientation: landscape) and (min-height: 1500px) { .hero { width: 70vw; } }
+@media screen and (orientation: landscape) and (min-width: 1500px) { .hero { width: 62vw; } }
 
 /* HERO-HELLO */
 .hero-hello { width: 81%; margin: auto; position: absolute; top: 40%; right: 0; left: 0; }
@@ -267,12 +268,12 @@ footer { width: 100%; position: absolute; bottom: 0; }
 
 .project-view-big { display: block; width: 100%; height: 100%; }
 
-.project-view-bg { width: 100%; }
+.project-view-bg { width: 100%; height: 100%; }
 @media screen and (orientation: portrait) { .project-view-bg { width: auto; } }
 
 .project-content { width: 87%; height: 57%; color: white; position: absolute; top: 0; margin: auto; left: 0; right: 0; bottom: 0; }
 
-.project-content-bg { width: 43%; margin: 0 auto; opacity: 0.6; }
+.project-content-bg { width: 43%; margin: 0 auto; }
 @media screen and (orientation: portrait) { .project-content-bg { width: 91%; } }
 
 .project-info { position: absolute; top: 2%; width: 100%; }
@@ -283,9 +284,17 @@ footer { width: 100%; position: absolute; bottom: 0; }
 .numeration { font: bold 6vw 'FuturaICG', 'Roboto Slab', sans-serif; position: absolute; top: -4vh; right: 0; }
 @media screen and (orientation: portrait) { .numeration { font-size: 5vh; } }
 
-.project-headline-primary { font: 15vw 'FuturaICG', 'Roboto Slab', sans-serif; text-transform: uppercase; position: relative; }
+.project-headline-primary { font: 15vw 'FuturaICG', 'Roboto Slab', sans-serif; text-transform: uppercase; position: relative; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62); }
 
-.high-tech { font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif; }
+#project-list { position: absolute; top: 0; z-index: 89; display: none; }
+
+.project-list-container { width: 70%; margin: 0 auto; margin-top: 3%; }
+.project-list-container li { margin-bottom: 40px; }
+.project-list-container li > a { font: 72px 'FuturaICG', 'Roboto Slab', sans-serif; -webkit-transition: 0.2s; transition: 0.2s; color: #101010; text-transform: uppercase; }
+.project-list-container li > a:hover { color: white; }
+.project-list-container p { font: italic 16px 'Georgia', 'Roboto Slab', sans-serif; color: #101010; }
+
+.high-tech { font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62); }
 
 @media screen and (orientation: portrait) { .project-category, .high-tech { display: none; } }
 #cta-btn { display: inline-block; font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif; text-transform: uppercase; background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #101010)); background: -webkit-linear-gradient(left, transparent 50%, #101010 50%); background: linear-gradient(to right, transparent 50%, #101010 50%); -webkit-background-size: 200% 100%; background-size: 200% 100%; background-position: left bottom; padding: 3vh 3vw; margin: -7vh 2vw 0 0; float: right; position: relative; right: 0; -webkit-transition: all 0.8s ease; transition: all 0.8s ease; }
@@ -300,12 +309,14 @@ footer { width: 100%; position: absolute; bottom: 0; }
 @media screen and (orientation: portrait) and (min-width: 1600px) { .carret-right { display: none; } }
 @media screen and (orientation: portrait) and (min-height: 1300px) { .carret-right { display: none; } }
 
-.view-all { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; width: 60px; height: 60px; background: transparent; margin: 0 auto; border-radius: 100%; position: absolute; right: 0; bottom: 3%; left: 0; -webkit-transition: 0.5s; transition: 0.5s; -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.11); box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.11); }
+.view-all { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; width: 60px; height: 60px; background: transparent; margin: 0 auto; border-radius: 100%; position: absolute; right: 0; bottom: 3%; left: 0; -webkit-transition: 0.5s; transition: 0.5s; -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.11); box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.11); z-index: 89; }
 .view-all:hover { -webkit-box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.18); box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.18); }
 @media screen and (orientation: landscape) and (max-width: 900px) { .view-all { width: 60px; height: 60px; } }
 @media screen and (orientation: landscape) and (max-height: 400px) { .view-all { display: none; } }
 
 i { color: white; }
+
+.hide { opacity: 0; }
 
 /* CAROUSEL-CONTROL */
 #carousel-control { width: 95%; height: 6%; position: absolute; top: 0; margin: auto; left: 0; right: 0; bottom: 0; }
@@ -324,13 +335,12 @@ i { color: white; }
 @media screen and (orientation: portrait) { .about-me-content { top: 12%; width: 83%; } }
 .about-me-content h3 { line-height: 0.8; width: 50%; display: inline-block; float: left; text-shadow: 10px 7px 0px rgba(255, 255, 255, 0.33); position: relative; z-index: 67; }
 .about-me-content h3 span { font-size: 11vw; }
-.about-me-content h1 { font: 36px/0.8 'Din', 'Roboto Slab', sans-serif; margin-bottom: 30px; }
-.about-me-content h1 span { font-size: 14px; }
-@media screen and (orientation: portrait) and (min-height: 730px) { .about-me-content h1 span { line-height: 1.7; font-size: 2vh; } }
 
 .about-me-info { width: 26%; position: relative; top: 30vh; left: 4vw; }
 @media screen and (orientation: portrait) { .about-me-info { width: auto; top: 7vh; left: 0; } }
 @media screen and (orientation: landscape) and (max-height: 500px) { .about-me-info { width: 43%; top: 5vh; } }
+.about-me-info h1 { font: 36px/0.8 'Din', 'Roboto Slab', sans-serif; margin-bottom: 30px; }
+@media screen and (orientation: portrait) and (min-height: 730px) { .about-me-info h1 { font-size: 5vh; } }
 .about-me-info p { font: 14px/1.7 'Din', 'Roboto Slab', sans-serif; }
 @media screen and (orientation: portrait) { .about-me-info p { margin-left: 0; } }
 @media screen and (orientation: portrait) and (max-height: 550px) { .about-me-info p { line-height: 1.7; font-size: 12px; } }
@@ -430,7 +440,7 @@ nav a:hover { background: rgba(6, 6, 6, 0.08); }
 
 .brand, .pt1, .pt2, .pt3, .pt4, .hero-hello, .hero-cta-info, .hero-mini-info, nav a { color: white; }
 
-#loader-wrapper, .main-nav, .bg-overlay, .bg-highlighter, .bg3 { background: #aa1717; }
+#loader-wrapper, .main-nav, .bg-overlay, .bg-highlighter, .bg3, #project-list { background: #aa1717; }
 
 .text-highlighter { color: #aa1717; font-weight: bold; text-shadow: -1px -1px 9px #000000; }
 

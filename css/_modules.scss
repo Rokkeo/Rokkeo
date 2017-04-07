@@ -84,15 +84,13 @@
 /* LOGO */
 .logo-medium {
 	width: 48px;
-	height: 48px;
 	padding: 28px;
 }
 .logo-small {
 	width: 28px;
-	height: 28px;
 	padding: 10px;
 	position: relative;
-	z-index: 99;
+	z-index: 32;
 }
 
 /* MENU-BUTTON */
@@ -203,6 +201,8 @@
 	@media screen and (orientation:portrait) and (min-height: 1000px){
 	width:auto;
 	}
+
+
 	@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1366px){
 		width: 70%;
 	}
@@ -218,7 +218,6 @@
 	@media screen and (orientation: landscape) and (min-width: 2000px) and (max-width: 3000px){
 		width: 70%;
 	}
-
 }
 .hero {
 	max-width: 100%;
@@ -226,12 +225,6 @@
 
 	@media screen and (orientation: portrait) and (min-height: 1500px){
 		width: 70vw;
-	}
-	@media screen and (orientation: landscape) and (max-height: 480px){
-	width: 57vw;
-	}
-	@media screen and (orientation: landscape) and (min-height: 1500px){
-	width: 70vw;
 	}
 	@media screen and (orientation:portrait) and (min-height: 1000px){
 	 	width: 100vh;
@@ -242,6 +235,17 @@
 	 	width: 100vh;
 		top: 5vh;
 	}
+
+	@media screen and (orientation: landscape) and (max-height: 480px){
+	width: 57vw;
+	}
+	@media screen and (orientation: landscape) and (min-height: 1500px){
+	width: 70vw;
+	}
+	@media screen and (orientation: landscape) and (min-width: 1500px){
+	width: 62vw;
+	}
+	
 }
 
 /* HERO-HELLO */
@@ -518,7 +522,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 }
 .project-view-bg {
 	width: 100%;
-	// height: 100%;
+	height: 100%;
 
 	@media screen and (orientation: portrait) {
 		width: auto;
@@ -538,7 +542,7 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 .project-content-bg {
 	width: 43%;
 	margin: 0 auto;
-	opacity: 0.6 ;
+	// opacity: 0.6 ;
 
 	@media screen and (orientation: portrait) {
 		width: 91%;
@@ -572,16 +576,55 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 	font: 15vw 'FuturaICG', 'Roboto Slab', sans-serif;
 	text-transform: uppercase;
 	position: relative;
-	// text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62)
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62)
 }
+
+#project-list {
+	position: absolute;
+	top: 0;
+	z-index: 89;
+	display: none;
+}
+
+.project-list-container {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3%;
+	
+	li {
+		margin-bottom: 40px;
+	}
+
+	li>a {
+		font: 72px 'FuturaICG', 'Roboto Slab', sans-serif;
+		transition: 0.2s;
+		color: #101010;
+		text-transform: uppercase;
+
+		&:hover {
+			// padding-left: 20px;
+			color: white;
+		}
+	}
+
+	p {
+		font: italic 16px 'Georgia', 'Roboto Slab', sans-serif;
+		color: #101010;
+	}
+	
+}
+
 .high-tech {
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.62)
 }
+
 @media screen and (orientation: portrait) {
 	.project-category, .high-tech {
 		display: none;
 	}
 }
+
 #cta-btn {
 	display: inline-block;
 	font: bold 2vw 'FuturaICG', 'Roboto Slab', sans-serif;
@@ -648,12 +691,12 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.11);
+    z-index: 89;
 
   	&:hover{
     	box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.18);
 
 	}
-
 	@media screen and (orientation: landscape) and (max-width: 900px) {
 		width: 60px;
 		height: 60px;
@@ -664,6 +707,10 @@ $prefixes: -webkit-,-moz-,-ms-,-o-;
 }
 i {
 	color: white;
+}
+
+.hide {
+	opacity: 0;
 }
 
 /* CAROUSEL-CONTROL */
@@ -733,20 +780,6 @@ i {
 			font-size: 11vw;
 		}
 	}
-
-	h1 {
-		font: 36px/0.8 'Din', 'Roboto Slab', sans-serif;
-		margin-bottom: 30px;
-
-		span {
-			font-size: 14px;
-
-			@media screen and (orientation: portrait) and (min-height: 730px) {
-				line-height: 1.7;
-				font-size: 2vh;
-			}
-		}
-	}
 }
 .about-me-info {
     width: 26%;
@@ -764,6 +797,16 @@ i {
 		width: 43%;
 		top: 5vh;
 
+	}
+
+	h1 {
+		font: 36px/0.8 'Din', 'Roboto Slab', sans-serif;
+		margin-bottom: 30px;
+		
+		@media screen and (orientation: portrait) and (min-height: 730px) {
+			// line-height: 1.7;
+			font-size: 5vh;
+		}
 	}
 
 	p {
