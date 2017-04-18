@@ -25,6 +25,7 @@ $text-transform: uppercase;
 body {
 	font-family: $font-family;
 	color: $text-color;
+	line-height: 1.8;
 }
 
 h1, h2,h3, h4, h5, h6 {
@@ -57,7 +58,6 @@ a {
 
 li, p {
 	font-size: 12px;
-	line-height: 25px;
 }
 
 p {
@@ -135,7 +135,7 @@ em {
 		font-size: 1em;
 		color: white;
 		text-transform: $text-transform;
-		padding: 1.563em;
+		padding: 1.9em;
 		font-weight: bold;
 		display: inline-block;
 		
@@ -273,6 +273,18 @@ article {
 			@include transition($transition);
 		}
 	
+	}
+}
+
+/* blogger-image */
+.blogger-img {
+	width: 50%;
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	
+	@media screen and (max-width: 700px) {
+		width: 100%;
+		float: none;
 	}
 }
 
